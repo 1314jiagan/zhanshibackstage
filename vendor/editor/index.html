@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 加载编辑器的容器 -->
+    <script id="container" name="content" type="text/plain"></script>
+    <!-- 配置文件 -->
+    <script
+      type="text/javascript"
+      src="./ueditor-1.4.3.3/ueditor.config.js"
+    ></script>
+    <!-- 编辑器源码文件 -->
+    <script
+      type="text/javascript"
+      src="./ueditor-1.4.3.3/ueditor.all.js"
+    ></script>
+    <!-- 实例化编辑器 -->
+    <script type="text/javascript">
+      var ue = UE.getEditor("container");
+    </script>
+    <hr />
+    <script id="container1" name="content" type="text/plain"></script>
+    <script type="text/javascript">
+      var ue1 = UE.getEditor("container1", {
+        toolbars: [["fullscreen", "source", "undo", "redo", "bold"]],
+        initialFrameWidth: 700,
+      });
+    </script>
+  </body>
+</html>
