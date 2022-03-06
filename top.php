@@ -56,10 +56,10 @@
     $(function () {
         $("div.nav>ul>li").hover(
             function () {
-                $(this).children("ul").animate({opacity: 1}, 1000)
+                $(this).children("ul").stop().animate({opacity: 1}, 1000)
             },
             function () {
-                $(this).children("ul").animate({opacity: 0}, 100)
+                $(this).children("ul").stop().animate({opacity: 0}, 1000)
             }
         );
         $("div.top>div>div.midden>form>input[type='submit']").click(function () {
